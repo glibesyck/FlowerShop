@@ -12,9 +12,9 @@ class FlowerBucketTest {
     private FlowerPack firstFlowerPack = new FlowerPack();
     private FlowerPack secondFlowerPack = new FlowerPack();
     private FlowerPack thirdFlowerPack = new FlowerPack();
-    private Flower firstFlower = new Flower(FlowerType.TULIP);
-    private Flower secondFlower = new Flower(FlowerType.CHAMOMILE);
-    private Flower thirdFlower = new Flower(FlowerType.ROSE);
+    private Flower firstFlower = Flower.flowerWithGivenType(FlowerType.ROSE);
+    private Flower secondFlower = Flower.flowerWithGivenType(FlowerType.CHAMOMILE);
+    private Flower thirdFlower = Flower.flowerWithGivenType(FlowerType.ROSE);
     private ArrayList<FlowerPack> bucket = new ArrayList<>(Arrays.asList(firstFlowerPack, secondFlowerPack, thirdFlowerPack));
     private FlowerBucket flowerBucket = new FlowerBucket(bucket);
     @BeforeEach
@@ -29,7 +29,6 @@ class FlowerBucketTest {
         thirdFlowerPack.setFlower(thirdFlower);
         thirdFlower.setPrice(5);
     }
-
 
     @Test
     void price() {

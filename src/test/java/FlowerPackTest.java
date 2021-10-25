@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class FlowerPackTest {
     private FlowerPack flowerPack = new FlowerPack();
-    private Flower flower = new Flower(FlowerType.TULIP);
+    private Flower flower = Flower.flowerWithGivenType(FlowerType.TULIP);
 
     @BeforeEach
     void setUp() {
