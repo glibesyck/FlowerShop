@@ -19,6 +19,7 @@ public class FlowerBucket extends Item{
     }
     @Override
     public String getDescription() {
-        return this.toString();
+        String description = "FlowerBucket {price=" + this.price() + "}";
+        return description;
     }
 }
