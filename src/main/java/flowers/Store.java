@@ -1,3 +1,5 @@
+package flowers;
+
 import flowers.Flower;
 
 import java.util.LinkedList;
@@ -30,7 +32,6 @@ public class Store {
                 continue;
             }
             matchingFlowers.add(possibleFlower);
-
         }
         return matchingFlowers;
     }
