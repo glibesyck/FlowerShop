@@ -8,8 +8,8 @@ class ReceiverTest {
     Receiver secondReceiver = new Receiver();
     @Test
     void ID() {
-        assertEquals(firstReceiver.getID(), 0);
-        assertEquals(secondReceiver.getID(), 1);
+        assertEquals(firstReceiver.getID(), 2);
+        assertEquals(secondReceiver.getID(), 3);
     }
 
 }
